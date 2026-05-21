@@ -20,7 +20,7 @@ int main()
         if(arr[i] + arr[j] + arr[k] == x)
         {
           printf("(%d,%d,%d) ",arr[i],arr[j],arr[k]);
-           count++;
+          count++;
         }
       }
     }

@@ -24,12 +24,29 @@ int SecondMax_Method_1(int arr[])
   return smax;
 }
 
+int SecondMax_Method_2(int arr[])
+{
+  int max = arr[0];
+  int smax = arr[1];
+  for (int i = 0; i < 5; i++) 
+  {
+    if(max < arr[i])
+    {
+      smax = max;
+      max = arr[i];
+    }
+    
+  }
+
+  return smax;
+}
+
 
 
 int main()
 {
   int arr[5] = {1,2,3,4,5};
   printArray(arr);
-  printf("\n%d",SecondMax_Method_1(arr));
+  printf("\n%d",SecondMax_Method_2(arr));
   return 0;
 }

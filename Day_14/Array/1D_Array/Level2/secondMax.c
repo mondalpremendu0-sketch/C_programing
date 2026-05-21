@@ -7,9 +7,9 @@ void printArray(int a[])
     printf("%d ",a[i]);
   }
 }
-int main()
+
+int SecondMax_Method_1(int arr[])
 {
-  int arr[5] = {1,2,3,4,5};
   int max = arr[0];
   int smax = arr[1];
   for (int i = 0; i < 5; i++) 
@@ -20,7 +20,16 @@ int main()
   {
     if(arr[j] != max && smax < arr[j]) smax = arr[j];
   }
+  
+  return smax;
+}
+
+
+
+int main()
+{
+  int arr[5] = {1,2,3,4,5};
   printArray(arr);
-  printf("\n%d",smax);
+  printf("\n%d",SecondMax_Method_1(arr));
   return 0;
 }

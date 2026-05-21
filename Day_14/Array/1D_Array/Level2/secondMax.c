@@ -66,7 +66,7 @@ int SecondMax_Method_3(int arr[])
 
 int main()
 {
-  int arr[5] = {1,6,3,4,5};
+  int arr[5] = {1,2,3,4,5};
   printArray(arr);
   printf("\n%d",SecondMax_Method_1(arr));
   printf("\n%d",SecondMax_Method_2(arr));

@@ -13,7 +13,7 @@ void selectionShort(int arr[],int n)
   for (int i = 0; i < n; i++) 
   {
     int min = i;
-    for (int j = i+1; j < n-i; j++) 
+    for (int j = i; j < n-i; j++) 
     {
       if(arr[j] < arr[min]) min = j;
     }

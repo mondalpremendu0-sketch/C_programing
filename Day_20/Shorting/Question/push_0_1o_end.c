@@ -10,11 +10,11 @@ void printArray(int arr[],int n)
 void push0ToEnd(int arr[],int n)
 {
   for (int i = 0; i < n; i++) {
-    for (int j = n-1; j >= 0; j--) {
-      if(arr[i] == 0){
+    for (int j = 0; j < n-1; j++) {
+      if(arr[j] == 0){
         int temp = arr[j];
-        arr[j] = 0;
-        arr[i] = temp;
+        arr[j] = arr[j+1];
+        arr[j+1] = temp;
       }
     }
   }
